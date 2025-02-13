@@ -11,11 +11,11 @@
 
 При разработке использованы принципы **SOLID**:
 
- **Single Responsibility Principle** – классы разделены по функциональности (Zoo, Vet, Animal, Thing и т.д.).
- **Open-Closed Principle** – можно добавлять новые типы объектов без изменения существующего кода.
- **Liskov Substitution Principle** – классы-наследники могут заменять родительские классы без изменения логики.
- **Interface Segregation Principle** – разделены интерфейсы `IAlive` и `IInventory`.
- **Dependency Inversion Principle** – зависимость от абстракций (`Vet` передаётся в `Zoo` через конструктор).
+ - **Single Responsibility Principle** – классы разделены по функциональности (Zoo, Vet, Animal, Thing и т.д.);
+ - **Open-Closed Principle** – можно добавлять новые типы объектов без изменения существующего кода;
+ - **Liskov Substitution Principle** – классы-наследники могут заменять родительские классы без изменения логики;
+ - **Interface Segregation Principle** – разделены интерфейсы `IAlive` и `IInventory`;
+ - **Dependency Inversion Principle** – зависимость от абстракций (`Vet` передаётся в `Zoo` через конструктор).
 
  - Используется механизм Dependency Injection (DI) через `ServiceCollection`.
 
